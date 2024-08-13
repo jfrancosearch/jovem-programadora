@@ -1,4 +1,4 @@
-programa
+programa 
 {
 /*1 - Declare as variáveis para o algoritmo de cadastramento de alunos, 
 cujos dados são: nome, sexo, endereço, cidade, estado, CEP, telefone, 
