@@ -1,0 +1,59 @@
+body {
+  font-family: "Inter", sans-serif; /*fonte da página*/
+}
+
+nav {
+  height: 80px; /*altura do menu*/
+  display: flex; /*deixar todos os elementos dentro do menu na horizontal*/
+  margin-left: 80px; /*margem esquerda*/
+  margin-right: 80px; /*margem direita*/
+  margin-top: 18px; /*margem de cima*/
+  margin-bottom: 18px; /*margem de baixo*/
+  padding-left: 32px; /*espaço interno esquerdo entre a escrita e a borda*/
+  padding-right: 32px; /*espaço interno direita entre a escrita e a borda*/
+  align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
+  font-weight: 500; /*peso da fonte*/
+  justify-content: space-between; /*espaço igual entre todos os elementos do menu, na horizonta*/
+}
+
+.logo {
+  display: flex;  /*deixar todos os elementos dentro do menu na horizontal*/
+  margin-top: 8.5px; /*margem de cima*/
+  margin-bottom: 8.5px; /*margem de baixo*/
+  align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
+}
+
+.logo img { /*estou selecionado o elemento de imagem que está dentro do elemento de logo*/
+  width: 27px; /*largura*/
+  height: 27px; /*altura*/
+  margin-right: 8px; /*margem da direita*/
+}
+
+ul {
+  display: flex; /*deixar todos os elementos dentro do menu na horizontal*/
+  gap: 32px; /*deixar espaçamento entre os elementos da lista de item*/
+  list-style: none; /*remover as bolinhas pretas do item da lista*/
+}
+
+a {
+  color: #667085; /*cor da fonte*/
+  text-decoration: none; /*remover o sublinhado dos links do menu*/
+}
+
+
+button {
+  color: #667085; /*cor do texto do botão */
+  border: none; /*remover a borda do botão*/
+  background-color: transparent; /* deixando o fundo do botão com cor transparente */
+  height: 44px; /*altura do botão*/
+  border-radius: 12px; /*arredondar as bordas */
+  font-size: 16px; /* tamanho da escrita dentro do botão*/
+  padding: 10px 18px; /* espaçamento interno do botão */
+  font-family: "Inter", sans-serif; /*fonte*/
+  font-weight: 500; /*peso da fonte*/
+}
+
+.botao-cadastrar{
+  background-color: #8E2424; /*cor de fundo do botão*/
+  color: white; /*cor da fonte do botão*/
+}
