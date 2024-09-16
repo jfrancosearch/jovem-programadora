@@ -2,45 +2,44 @@ body {
     font-family: "Inter", sans-serif; /*fonte da página*/
   }
   
+
 nav {
   height: 80px; /*altura do menu*/
-  display: flex; /*deixar todos os elementos dentro do menu na horizontal*/
-  margin-left: 125px; /*margem esquerda*/
-  margin-right: 125px; /*margem direita*/
-  margin-top: 18px; /*margem de cima*/
-  margin-bottom: 18px; /*margem de baixo*/
-  padding-left: 32 px; /*espaço interno esquerdo entre a escrita e a borda*/
-  padding-right: 32px; /*espaço interno direita entre a escrita e a borda*/
+  display: flex; /*deixar todos os elementos dentro do menu na horizontal*/  
+  padding-top: 20px; /*margem de cima*/
+  padding-bottom: 20px; /*margem de baixo */
+  padding-left: 300px; /*espaço interno esquerdo entre a escrita e a borda*/
+  padding-right: 300px; /*espaço interno direita entre a escrita e a borda*/
   align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
   font-weight: 500; /*peso da fonte*/
-  justify-content: space-between; /*espaço igual entre todos os elementos do menu, na horizonta*/
+  justify-content: space-between; /*espaço igual entre todos os elementos do menu, na horizontal*/
 }
 .logo {
-  display: flex;  /*deixar todos os elementos dentro do menu na horizontal*/
-  margin-top: 8.5px; /*margem de cima*/
-  margin-bottom: 8.5px; /*margem de baixo*/
+  display: flex;  /*deixar todos os elementos dentro do menu na horizontal*/  
   align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
+  font-size: 24px;
+  font-weight: 600;
 }
+
 .logo img { /*estou selecionado o elemento de imagem que está dentro do elemento de logo*/
-  width: 27px; /*largura*/
-  height: 27px; /*altura*/
+  width: 40px; /*largura*/
+  height: 40px; /*altura*/
   margin-right: 8px; /*margem da direita*/
 }  
 button {
-  color: #ff0000; /*cor do texto do botão */
+  color: #E05151; /*cor do texto do botão */
   /* border: none; /*remover a borda do botão*/
   background-color: transparent; /* deixando o fundo do botão com cor transparente */
-  height: 48px; /*altura do botão*/
-  
+  height: 48px; /*altura do botão*/  
   /* border-radius: 12px; /*arredondar as bordas */
   font-size: 16px; /* tamanho da escrita dentro do botão*/
   padding: 12px 24px; /* espaçamento interno do botão */
   font-family: "Inter", sans-serif; /*fonte*/
-  font-weight: 500; /*peso da fonte*/
-    border : 1px solid #b8c8ea 
+  font-weight: 600; /*peso da fonte*/
+  border : 1px solid #CEE0F5 /*1px(espessura da borda) solid(linha) depois vem a cor da borda*/
 }
 .botao-cadastrar{
-  background-color: #ff0000; /*cor de fundo do botão*/
+  background-color: #E05151; /*cor de fundo do botão*/
   color: white; /*cor da fonte do botão*/
-  border : none;
+  border : none; /*remove a borda do botão cadastrar*/
 }  
