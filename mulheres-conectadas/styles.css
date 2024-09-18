@@ -14,6 +14,7 @@ nav {
   font-weight: 500; /*peso da fonte*/
   justify-content: space-between; /*espaço igual entre todos os elementos do menu, na horizontal*/
 }
+
 .logo {
   display: flex;  /*deixar todos os elementos dentro do menu na horizontal*/  
   align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
@@ -26,6 +27,7 @@ nav {
   height: 40px; /*altura*/
   margin-right: 8px; /*margem da direita*/
 }  
+
 button {
   color: #E05151; /*cor do texto do botão */
   /* border: none; /*remover a borda do botão*/
@@ -38,8 +40,39 @@ button {
   font-weight: 600; /*peso da fonte*/
   border : 1px solid #CEE0F5 /*1px(espessura da borda) solid(linha) depois vem a cor da borda*/
 }
+
 .botao-cadastrar{
   background-color: #E05151; /*cor de fundo do botão*/
   color: white; /*cor da fonte do botão*/
   border : none; /*remove a borda do botão cadastrar*/
 }  
+
+section{
+  height: 594px;
+  position: relative; /*vai definir que toda a seção vai ficar posicionada de forma relativa à página*/
+}
+
+.conteudo-hero{
+  padding: 100px 300px; /*espaço interno baixo-cima(100) e esquerda-direita(300)*/
+  display: flex;
+  align-items: center; 
+}
+
+/*aqui eu estou selecionado o elemento <h1> que está dentro do elemento que tem a classe informacao-hero*/
+.informacao-hero h1{ 
+  font-size: 36px;
+} 
+
+/*aqui eu estou selecionado o elemento <p> que está dentro do elemento que tem a classe informacao-hero*/
+.informacao-hero p{
+  color: #5E6670;
+}
+
+.imagem-fundo{
+  position: absolute; /*estou deixando a imagem na posição absoluta em relação ao meu <section>*/
+  width: 100%; /*ocupa a largura total da página*/
+  height: 100%; /*ocupa a altura total definida no section, no caso de 594px*/
+  z-index: -1; /*aqui eu estou dizendo que a imagem vai ficar atrás do conteudo escrito na tela*/
+  object-fit: cover; /* estou dizendo pra imagem ocupar a largura total da página*/
+  opacity: 0.2; /*estou colocando uma opacidade de 20% na imagem*/
+}
