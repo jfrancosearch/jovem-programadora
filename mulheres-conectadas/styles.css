@@ -67,6 +67,40 @@ button {
   align-items: center; 
 }
 
+.como-funciona{
+  background-color: #F1F2F4;
+  height: 506px;
+  padding: 100px 300px;
+  box-sizing: border-box;
+}
+
+.como-funciona h2{
+  text-align: center;
+}
+
+.conteudo-como-funciona{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.informacao-como-funciona{
+  width: 312px;
+  display: flex;
+  flex-direction: column;
+  height: 172px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.informacao-como-funciona:nth-child(2){
+  background-color: white;
+}
+
+
 .informacao-hero {
   max-width: 652px;
 }
@@ -81,7 +115,7 @@ button {
   color: #5E6670;
 }
 
-.vagas-mais-populares{
+.vagas-mais-populares {
   display: flex;
   padding: 100px 0px;
   flex-direction: column;
