@@ -141,3 +141,51 @@ span {
   display: flex;
   margin-top: 8px;
 }
+
+.depoimentos{  
+  height: 506px;
+  padding: 100px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.depoimentos h2{
+  text-align: center;
+}
+
+.conteudo-depoimentos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;  
+}
+
+.depoimento-card{
+  width: 424px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 12px 12px rgb(0, 44, 109, 10%);
+}
+
+.corpo-depoimento{
+  color: #464D61;
+}
+
+.rodape-depoimento{
+  display: flex;
+  align-items: center;  
+}
+
+.perfil-depoimento{
+  flex-grow: 1;
+  margin-left: 12px;
+}
+
+.slide{
+  margin-top: 50px;
+}
+
+.profissao{
+  color: #767E94;;
+}
