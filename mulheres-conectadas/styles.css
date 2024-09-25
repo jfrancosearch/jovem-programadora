@@ -227,3 +227,12 @@ span {
   background: #B34141;
   color: #fff;
 }
+
+footer{
+  color: #767F8C;
+  background: #000;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 24px 300px;
+}
