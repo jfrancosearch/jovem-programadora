@@ -189,3 +189,41 @@ span {
 .profissao{
   color: #767E94;;
 }
+
+.acao-chamada {
+  display: flex;
+  align-items: center;
+  height: 414px;
+  background: #F1F2F4;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card-profissional{
+  width: 648px;
+  background: #E4E5E8;
+  border-radius: 12px;
+  padding: 50px;  
+  font-size: 28px;
+}
+
+.card-profissional>h3{
+  margin: 0;
+}
+
+.card-profissional>button{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin-top: 26px;
+}
+
+.card-profissional>button>img{
+  width: 40px;
+  height: 40px;
+}
+
+.recrutador{
+  background: #B34141;
+  color: #fff;
+}
