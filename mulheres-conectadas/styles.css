@@ -1,41 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Inter", sans-serif; /*fonte da página*/
-  }
-  
-
-nav {
-  height: 80px; /*altura do menu*/
-  display: flex; /*deixar todos os elementos dentro do menu na horizontal*/  
-  padding-top: 20px; /*margem de cima*/
-  padding-bottom: 20px; /*margem de baixo */
-  padding-left: 300px; /*espaço interno esquerdo entre a escrita e a borda*/
-  padding-right: 300px; /*espaço interno direita entre a escrita e a borda*/
-  align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
-  font-weight: 500; /*peso da fonte*/
-  justify-content: space-between; /*espaço igual entre todos os elementos do menu, na horizontal*/
+    font-size: 1rem;
 }
+  
+/* Estilos do menu de navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3.125rem; /* 20px 50px */
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
 
 .logo {
   display: flex;  /*deixar todos os elementos dentro do menu na horizontal*/  
   align-items: center; /*alinhar todos os elementos do menu centralizando ao meio no eixo y*/
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .logo img { /*estou selecionado o elemento de imagem que está dentro do elemento de logo*/
-  width: 40px; /*largura*/
-  height: 40px; /*altura*/
-  margin-right: 8px; /*margem da direita*/
+  width: 2.5rem; /*largura*/
+  height: 2.5rem; /*altura*/
+  margin-right: 0.5rem; /*margem da direita*/
 }  
 
 button {
   color: #E05151; /*cor do texto do botão */
   /* border: none; /*remover a borda do botão*/
   background-color: transparent; /* deixando o fundo do botão com cor transparente */
-  height: 48px; /*altura do botão*/  
-  /* border-radius: 12px; /*arredondar as bordas */
-  font-size: 16px; /* tamanho da escrita dentro do botão*/
-  padding: 12px 24px; /* espaçamento interno do botão */
+  height: 3rem; /*altura do botão*/  
+  /* border-radius: 0.75rem; /*arredondar as bordas */
+  font-size: 1rem; /* tamanho da escrita dentro do botão*/
+  padding: 0.75rem 1.5rem; /* espaçamento interno do botão */
   font-family: "Inter", sans-serif; /*fonte*/
   font-weight: 600; /*peso da fonte*/
   border : 1px solid #CEE0F5 /*1px(espessura da borda) solid(linha) depois vem a cor da borda*/
@@ -47,53 +52,59 @@ button {
   border : none; /*remove a borda do botão cadastrar*/
 }  
 
-.hero{
-  height: 594px;
-  position: relative; /*vai definir que toda a seção vai ficar posicionada de forma relativa à página*/
+/* Hero Section */
+.hero {
+  position: relative;
+  height: auto;
+  padding: 6.25rem 3.125rem; /* 100px 50px */
+  /* background: url("foto-fundo.jpg") no-repeat center/cover; */
 }
 
-.imagem-fundo{
-  position: absolute; /*estou deixando a imagem na posição absoluta em relação ao meu <section>*/
-  width: 100%; /*ocupa a largura total da página*/
-  height: 100%; /*ocupa a altura total definida no section, no caso de 594px*/
-  z-index: -1; /*aqui eu estou dizendo que a imagem vai ficar atrás do conteudo escrito na tela*/
-  object-fit: cover; /* estou dizendo pra imagem ocupar a largura total da página*/
-  opacity: 0.2; /*estou colocando uma opacidade de 20% na imagem*/
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("foto-fundo.jpg") no-repeat center/cover;
+  opacity: 0.2; /* Aplica opacidade somente à imagem */
+  z-index: -1; /* Mantém a imagem atrás do conteúdo */
 }
 
-.conteudo-hero{
-  padding: 100px 300px; /*espaço interno baixo-cima(100) e esquerda-direita(300)*/
+.conteudo-hero {
   display: flex;
-  align-items: center; 
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  z-index: 1; /* Garante que o conteúdo esteja à frente da imagem */
 }
-
-.como-funciona{
+/* Como funciona */
+.como-funciona {
   background-color: #F1F2F4;
-  height: 506px;
-  padding: 100px 300px;
-  box-sizing: border-box;
+  padding: 6.25rem 3.125rem;
+  text-align: center;
 }
 
 .como-funciona h2{
   text-align: center;
 }
 
-.conteudo-como-funciona{
+.conteudo-como-funciona {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.informacao-como-funciona{
-  width: 312px;
-  display: flex;
-  flex-direction: column;
-  height: 172px;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 24px;
+.informacao-como-funciona {
+  flex: 1 1 100%;
+  max-width: 300px;
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: white;
   border-radius: 12px;
+  text-align: center;
 }
 
 .informacao-como-funciona:nth-child(2){
@@ -102,12 +113,13 @@ button {
 
 
 .informacao-hero {
-  max-width: 652px;
+  max-width: 40.75rem;
+  margin-bottom: 2rem;
 }
 
 /*aqui eu estou selecionado o elemento <h1> que está dentro do elemento que tem a classe informacao-hero*/
 .informacao-hero h1{ 
-  font-size: 36px;
+  font-size: 2.25rem;
 } 
 
 /*aqui eu estou selecionado o elemento <p> que está dentro do elemento que tem a classe informacao-hero*/
@@ -115,96 +127,120 @@ button {
   color: #5E6670;
 }
 
+.imagem-hero img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Seção Vagas mais populares */
 .vagas-mais-populares {
-  display: flex;
-  padding: 100px 0px;
-  flex-direction: column;
-  align-items: center;
+  padding: 6.25rem 0;
+  text-align: center;
+}
+
+.vagas-mais-populares table {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+td {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 h2 {
-  margin-bottom: 50px;
-  margin-top: 0px;
+  margin-bottom: 3.125rem;
+  margin-top: 0;
 }
 
-
-td {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0px 24px 24px 24px;
-}
 
 span {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #767F8C;
   display: flex;
-  margin-top: 8px;
+  margin-top: 0.5rem;
+  justify-content: center;
 }
 
-.depoimentos{  
-  height: 506px;
-  padding: 100px 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Depoimentos */
+.depoimentos {
+  padding: 6.25rem 3.125rem;
+  text-align: center;
 }
 
 .depoimentos h2{
   text-align: center;
 }
 
-.conteudo-depoimentos{
+.conteudo-depoimentos {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;  
 }
 
-.depoimento-card{
-  width: 424px;
+.depoimento-card {
+  width: 100%;
+  max-width: 26.5rem;
+  padding: 1.5rem;
   border-radius: 12px;
-  padding: 24px;
-  box-shadow: 12px 12px rgb(0, 44, 109, 10%);
+  box-shadow: 0.75rem 0.75rem rgba(0, 44, 109, 0.1);
 }
 
 .corpo-depoimento{
   color: #464D61;
 }
 
-.rodape-depoimento{
+.rodape-depoimento {
   display: flex;
-  align-items: center;  
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .perfil-depoimento{
   flex-grow: 1;
-  margin-left: 12px;
+  margin-left: 0.75rem;
 }
 
 .slide{
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .profissao{
   color: #767E94;;
 }
 
+/* Seção de chamada à ação */
 .acao-chamada {
   display: flex;
-  align-items: center;
-  height: 414px;
-  background: #F1F2F4;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  padding: 3.125rem;
+  background: #F1F2F4;
 }
 
-.card-profissional{
-  width: 648px;
-  background: #E4E5E8;
+.card-profissional {
+  width: 100%;
+  max-width: 40.5rem;
+  margin: 1rem;
+  padding: 3.125rem;
+  background-color: #E4E5E8;
   border-radius: 12px;
-  padding: 50px;  
-  font-size: 28px;
+  text-align: center;
+  /* Centralização com Flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.75rem;
 }
 
 .card-profissional>h3{
@@ -214,13 +250,15 @@ span {
 .card-profissional>button{
   display: flex;
   align-items: center;
+  justify-content: center;
   background: #fff;
-  margin-top: 26px;
+  margin-top: 1.625rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .card-profissional>button>img{
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .recrutador{
@@ -228,11 +266,109 @@ span {
   color: #fff;
 }
 
-footer{
-  color: #767F8C;
+/* Footer */
+footer {
+  padding: 1.5rem 3.125rem;
   background: #000;
-  height: 68px;
-  display: flex;
-  align-items: center;
-  padding: 24px 300px;
+  color: #767F8C;
+  text-align: center;
+}
+
+/* Resolução para telas menores (como celulares) */
+@media (max-width: 768px) {
+  .hero, .como-funciona, .depoimentos, .acao-chamada {
+    padding: 3.125rem 1.25rem; /* 50px 20px */
+  }
+
+  .conteudo-hero, .conteudo-como-funciona, .conteudo-depoimentos {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .conteudo-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vagas-mais-populares table {
+    font-size: 0.875rem; /* Reduz o tamanho da fonte */
+  }
+
+  nav {
+    padding-left: 1.25rem; /* 20px */
+    padding-right: 1.25rem; /* 20px */
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .conteudo-hero {
+    flex-direction: column;
+    padding: 3.125rem 1.25rem; /* 50px 20px */
+  } 
+
+  .informacao-hero {
+    text-align: center;
+    margin-bottom: 1.25rem; /* 20px */
+  }
+
+  .vagas-mais-populares {
+    padding: 3.125rem 1.25rem; /* 50px 20px */
+  }
+
+  .como-funciona, .depoimentos, .acao-chamada {
+    padding: 3.125rem 1.25rem; /* 50px 20px */
+  }
+
+  .conteudo-como-funciona, .conteudo-depoimentos {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+  }
+
+  .depoimento-card, .card-profissional {
+    max-width: 100%;
+  }
+
+  .acao-chamada {
+    flex-direction: column;
+  }
+
+  .card-profissional {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    padding: 1.25rem; /* 20px */
+  }
+}
+
+/* Resolução para telas intermediárias (tablets) */
+@media (max-width: 1024px) {
+  nav {
+    padding-left: 3.125rem; /* 50px */
+    padding-right: 3.125rem; /* 50px */
+  }
+
+  .conteudo-hero {
+    padding: 3.125rem 6.25rem; /* 50px 100px */
+  }
+
+  .como-funciona, .depoimentos, .acao-chamada {
+    padding: 3.125rem 6.25rem; /* 50px 100px */
+  }
+
+  .conteudo-como-funciona, .conteudo-depoimentos {
+    flex-direction: column;
+  }
+
+  .depoimento-card {
+    width: 90%;
+  }
+
+  footer {
+    padding: 1.25rem 6.25rem; /* 20px 100px */
+  }
 }
